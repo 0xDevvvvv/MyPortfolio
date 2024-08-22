@@ -1,9 +1,34 @@
-
-
+'use client'
 import React from "react"
 import { FloatingNav } from "@/components/ui/floating-navbar"
+import { FloatingDock } from "@/components/ui/floating-dock"
+import {
+    IconBrandGithub,
+    IconBrandLinkedin,
+    IconBrandInstagram
+  } from "@tabler/icons-react";
+import Link from "next/link";
+function FixedNavBar(){
+    return (
+        <div className="rounded-sm flex text-center ">
+            <div className=' bg-slate-200 flex-auto min-h-12 font-pacifico text-6xs tracking-wide sm:text-2xl  py-3'>
+                <Link href='/' >Dev Bhagavan SK</Link>
+            </div>
+            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter  min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            About 
+            </div>
+            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter   min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            Projects 
+            </div>
+            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter   min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            Contact 
+            </div>
+           
+        </div>
+    );
+}
 
-export default function FloatingNavlinks(){
+function FloatingNavlinks(){
     const navitems = [
         {
             name:"Home",
@@ -25,3 +50,42 @@ export default function FloatingNavlinks(){
         </div>
     )
 }
+
+function FloatingDockLinks(){
+
+    const docklinks = [
+        {
+            title:"LinkedIn",
+            icon: (
+                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+              ),
+            href:"https://www.linkedin.com/in/dev-bhagavan-s-k-06439a252/"
+        },
+        {
+            title:"GitHub",
+            icon: (
+                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+              ),
+            href:"https://github.com/0xDevvvvv"
+        },
+        {
+            title:"Instagram",
+            icon: (
+                <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+              ),
+            href:"https://instagram.com/__dev25__"
+        }
+    ]
+    return (
+        <div className="flex items-center justify-center h-[35rem] w-full">
+            <FloatingDock
+                desktopClassName="fixed left-2 bottom-0"
+                mobileClassName="fixed z-[5000] right-4 bottom-5" // only for demo, remove for production
+                items={docklinks}
+            />
+        </div>
+    );
+
+}
+
+export  {FloatingDockLinks, FloatingNavlinks, FixedNavBar};

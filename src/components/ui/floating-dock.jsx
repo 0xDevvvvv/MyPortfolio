@@ -3,7 +3,6 @@
  * Desktop navbar is better positioned at the bottom
  * Mobile navbar is better positioned at bottom right.
  **/
-
 import { cn } from "@/lib/utils";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
@@ -76,10 +75,11 @@ const FloatingDockDesktop = ({
   let mouseX = useMotionValue(Infinity);
   return (
     (<motion.div
-      onMouseMove={(e) => mouseX.set(e.pageX)}
+      /*e.pageX*/
+      onMouseMove={(e) => mouseX.set(Infinity)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-2 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
         className
       )}>
       {items.map((item) => (

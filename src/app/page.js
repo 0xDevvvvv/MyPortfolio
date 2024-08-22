@@ -1,24 +1,32 @@
+
 import React from 'react'
-import FloatingNavlinks from './components/navbar.js'
+import {FloatingNavlinks,FloatingDockLinks,FixedNavBar} from './components/navbar.js'
+import Image from 'next/image.js'
+
 function page() {
   return (
-    <>
+    <div>
+      <FixedNavBar />
       <FloatingNavlinks/>
-      <Content/>
-    </>
+      <div className='float-start'>
+        <FloatingDockLinks/>
+      </div>
+        <HeroSection/>
+    </div>
 
   )
 }
-const Content  = () =>{
+const HeroSection  = () =>{
   return (
-    <div>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-      Hello I am Dev Bhagavan SK<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <div className='grid-cols-2 font-mono gap-0'>
+      <div className='bg-slate-200  col-span-1 text-4xl sm:text-9xl'>
+        Dev 
+        Bhagavan 
+        SK
+      </div>
+      <div className='bg-slate-200 col-span-1 text-2xl sm:text-8xl '>
+        Engineering Student
+      </div>
     </div>
   )
 }
