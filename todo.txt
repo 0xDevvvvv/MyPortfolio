@@ -1,0 +1,1 @@
+expandable card for project section (acceternity ui)

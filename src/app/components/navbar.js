@@ -11,16 +11,16 @@ import Link from "next/link";
 function FixedNavBar(){
     return (
         <div className="rounded-sm flex text-center ">
-            <div className=' bg-slate-200 flex-auto min-h-12 font-pacifico text-6xs tracking-wide sm:text-2xl  py-3'>
-                <Link href='/' >Dev Bhagavan SK</Link>
+            <div className=' bg-slate-100 flex-auto min-h-14 font-pacifico text-6xs tracking-wide sm:text-4xl  py-3'>
+                <Link  href='/' >Dev Bhagavan SK</Link>
             </div>
-            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter  min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter  min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
             About 
             </div>
-            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter   min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
             Projects 
             </div>
-            <div className=' bg-slate-200 hidden sm:block flex-auto tracking-tighter   min-h-12 text-xs sm:text-xl py-3 px-4 max-w-fit'>
+            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
             Contact 
             </div>
            
@@ -57,21 +57,21 @@ function FloatingDockLinks(){
         {
             title:"LinkedIn",
             icon: (
-                <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandLinkedin className="h-full w-full text-slate-500 dark:text-neutral-300" />
               ),
             href:"https://www.linkedin.com/in/dev-bhagavan-s-k-06439a252/"
         },
         {
             title:"GitHub",
             icon: (
-                <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandGithub className="h-full w-full text-slate-500 dark:text-neutral-300" />
               ),
             href:"https://github.com/0xDevvvvv"
         },
         {
             title:"Instagram",
             icon: (
-                <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+                <IconBrandInstagram className="h-full w-full text-slate-500 dark:text-slate-100" />
               ),
             href:"https://instagram.com/__dev25__"
         }
