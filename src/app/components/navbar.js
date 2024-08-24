@@ -11,16 +11,16 @@ import Link from "next/link";
 function FixedNavBar(){
     return (
         <div className="rounded-sm flex text-center ">
-            <div className=' bg-slate-100 flex-auto min-h-14 font-pacifico text-6xs tracking-wide sm:text-4xl  py-3'>
+            <div className='bg-opacity-50 bg-slate-100 flex-auto min-h-14 font-pacifico text-6xs tracking-wide sm:text-4xl  py-3'>
                 <Link  href='/' >Dev Bhagavan SK</Link>
             </div>
-            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter  min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            About 
+            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter  min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+            <Link href="#about">About</Link> 
             </div>
-            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            Projects 
+            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+            <Link href="#projects">Projects</Link> 
             </div>
-            <div className=' hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
             Contact 
             </div>
            
@@ -51,7 +51,7 @@ function FloatingNavlinks(){
     )
 }
 
-function FloatingDockLinks(){
+function FloatingDockLinks({mobClass}){
 
     const docklinks = [
         {
@@ -77,10 +77,10 @@ function FloatingDockLinks(){
         }
     ]
     return (
-        <div className="flex items-center justify-center h-[35rem] w-full">
+        <div className="flex items-center justify-center w-full">
             <FloatingDock
-                desktopClassName="fixed left-2 bottom-0"
-                mobileClassName="fixed z-[5000] right-4 bottom-5" // only for demo, remove for production
+                desktopClassName="fixed right-2 bottom-0"
+                mobileClassName="hidden right-4 bottom-5" // only for demo, remove for production
                 items={docklinks}
             />
         </div>
