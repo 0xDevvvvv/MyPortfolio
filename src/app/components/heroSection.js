@@ -10,6 +10,7 @@ export default function HeroSection(){
         <div className='sm:p-10'>
           <span className='tracking-tighter text-3xl sm:text-8xl max-w-1'>Who Am I?<br/>Dev Bhagavan SK<br/></span>
           <span className='tracking-tighter text-xl sm:text-5xl'><FlipWords className="" duration={2000} words={words} /> <br /></span>
+          <span className='tracking-tighter text-lg sm:text-3xl'></span>
         </div>
       </div>
     )
