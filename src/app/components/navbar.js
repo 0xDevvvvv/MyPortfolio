@@ -21,7 +21,7 @@ function FixedNavBar(){
             <Link href="#projects">Projects</Link> 
             </div>
             <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            Contact 
+            <Link href="#contact">Contact</Link> 
             </div>
            
         </div>

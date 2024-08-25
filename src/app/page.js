@@ -1,8 +1,7 @@
 
 import React from 'react'
-import {FloatingNavlinks,FloatingDockLinks,FixedNavBar} from './components/navbar.js'
+import {FloatingDockLinks,FixedNavBar} from './components/navbar.js'
 import HeroSection from './components/heroSection.js'
-import Image from 'next/image.js'
 import ProjectSection from './components/projectSection.js'
 import AboutMe from './components/aboutMe.js'
 import ContactSection from './components/contactSection.js'
@@ -52,6 +51,7 @@ function page() {
       </div>
     );
   }
+  
 
   return (
     <div className='min-h-screen bg-[url("/doodlevecteezy-opacity10.png")]'>
