@@ -31,7 +31,7 @@ export default function ContactSection(){
                     <a href="https://www.linkedin.com/in/dev-bhagavan-s-k-06439a252/" target="_blank"><IconBrandLinkedin className={iconClass}/></a>
                 </div>
             </span>
-
+            <span className="relative float-right text-xs">Images from <a href="https://www.vecteezy.com" target="_blank">vecteezy.com</a></span>
         </div>
 
     );
