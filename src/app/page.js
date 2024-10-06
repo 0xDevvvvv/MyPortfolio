@@ -1,10 +1,10 @@
 
 import React from 'react'
-import {FloatingDockLinks,FixedNavBar} from './components/navbar.js'
-import HeroSection from './components/heroSection.js'
-import ProjectSection from './components/projectSection.js'
-import AboutMe from './components/aboutMe.js'
-import ContactSection from './components/contactSection.js'
+import {FloatingDockLinks,FixedNavBar} from './_components/navbar.js'
+import HeroSection from './_components/heroSection.js'
+import ProjectSection from './_components/projectSection.js'
+import AboutMe from './_components/aboutMe.js'
+import ContactSection from './_components/contactSection.js'
 function page() {
   const TagHappy = () =>{
     return(

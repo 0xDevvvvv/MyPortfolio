@@ -18,7 +18,7 @@ const Github = () =>{
 
 export default function ContactSection(){
     const divClass = "flex flex-col px-2 text-xl sm:text-2xl mt-5 text-left"
-    const iconClass = "scale-125"
+    const iconClass = "hover:animate-spin scale-125"
     return(
         <div className="flex flex-col items-center justify-center text-center font-mono mb-6" id="contact" >
             <span className="items-center justify-center mx-5 my-5  text-2xl sm:text-4xl"><u>#Contact Me</u></span>

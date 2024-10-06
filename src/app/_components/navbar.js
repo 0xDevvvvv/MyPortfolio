@@ -77,7 +77,7 @@ function FloatingDockLinks({mobClass}){
         }
     ]
     return (
-        <div className="flex items-center justify-center w-full">
+        <div className="flex sm:mt-5 items-center justify-center w-full">
             <FloatingDock
                 desktopClassName="fixed right-2 bottom-0"
                 mobileClassName="hidden right-4 bottom-5" // only for demo, remove for production
