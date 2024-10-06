@@ -14,15 +14,21 @@ function FixedNavBar(){
             <div className='bg-opacity-50 bg-slate-100 flex-auto min-h-14 font-pacifico text-6xs tracking-wide sm:text-4xl  py-3'>
                 <Link  href='/' >Dev Bhagavan SK</Link>
             </div>
-            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter  min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            <Link href="#about">About</Link> 
-            </div>
-            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            <Link href="#projects">Projects</Link> 
-            </div>
-            <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
-            <Link href="#contact">Contact</Link> 
-            </div>
+            <Link href="#about">
+                <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter  min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+                About
+                </div>
+            </Link> 
+            <Link href="#projects">
+                <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+                Projects
+                </div>
+            </Link> 
+            <Link href="#contact">
+                <div className='bg-opacity-50 hover:bg-slate-400 hover:text-white rounded-sm bg-slate-100  flex-auto tracking-tighter   min-h-14 text-2xs sm:text-xl py-3 px-2 sm:px-4 max-w-fit'>
+                Contact
+                </div>
+            </Link> 
            
         </div>
     );

@@ -22,8 +22,8 @@ export function CarouselSize({projects}) {
         {projects.map((p, index) => (
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 ">
             <div className="p-1">
-              <Card className='opacity-75 hover:opacity-100 max-h-fit'>
-                <CardContent className="flex-col font-semibold bg-gray-200 aspect-square items-center justify-center p-6 rounded-lg">
+              <Card className='opacity-75 hover:opacity-100 z-10 max-h-fit'>
+                <CardContent className=" flex-col  bg-gray-200 aspect-square items-center justify-center p-6 rounded-lg shadow-2xl  border-gray-200 border-2">
                 <div class="flex items-center p-[9px]">
                   <div class="px-0 py-[4px]">
                     <span class="inline-block items-center p-[1px] rounded-[50%] w-[10px] h-[10px] bg-yellow-500"></span>
